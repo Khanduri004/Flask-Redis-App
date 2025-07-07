@@ -11,5 +11,7 @@ COPY . .
 EXPOSE 5000
 #Start the flask app
 CMD ["python", "app.py"]   
-#why app.py :  
+#why app.py :  This tells Docker what command to run when the container starts. Specifically:
+#python: runs the Python interpreter
+#app.py: runs your Flask application file (from flask import Flask)
   
